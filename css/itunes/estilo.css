@@ -1,0 +1,149 @@
+body,
+input
+{
+	font-family: sans-serif;
+}
+
+header{
+	background: rgb(197, 197, 197);
+}
+.itn aside ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.itn aside ul li {
+/* padding: 0.2em 0; */
+/* height: 1.4em; */
+}
+.itn aside ul li.we-active{
+    background: lightgrey;
+
+}
+
+
+
+
+.itn aside ul li ul{}
+
+
+.itn aside ul ul {
+    margin-left: 1em;
+
+}
+
+.itn aside ul li a {
+	/* border-left-color: rgb(39, 39, 39); */
+	/* border-left-width: 0.2em; */
+	/* border-left-style: solid; */
+	margin-left: 0.2em;
+	display: block;
+	padding: 0.4em 0;
+}
+
+.itn input,
+.we-boton[href]
+{
+	color:black;
+}
+
+.we-boton{
+	color: rgb(208, 208, 208);
+}
+.we-boton[href]{
+
+}
+.we-boton[href]:hover{
+
+}
+
+.we-buscar{
+	border:none;
+	color: rgb(140, 140, 140);
+}
+
+.we-buscar input{
+	background: transparent;
+}
+
+.we-bt-nav{
+
+}
+
+.we-bt-nav .we-boton{
+
+}
+
+.we-boton,
+.we-buscar
+{
+	background: rgb(240, 240, 240);
+}
+
+.we-boton,
+.we-buscar
+{
+	border-radius: 0.3em;
+}
+
+.we-boton,
+.we-buscar
+{
+	box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.20);
+}
+
+.itn aside ul li.we-active .we-text{
+}
+
+.itn aside ul li .we-text{
+    color: rgb(69, 69, 69);
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.itn aside ul li .we-badge{
+	color: rgb(152, 152, 152);
+	border-radius: 0.2em;
+	padding: 0.2em;
+	float: right;
+	font-size: 0.8em;
+}
+.itn button, .we-boton {
+	padding: 0.2em 0.5em;
+	display: inline-block;
+}
+
+.itn aside .we-boton
+{
+   margin-left: 0.7em;
+}
+.itn aside .we-section > .we-title
+{
+   color: rgb(157, 157, 157);
+   margin-left: 1.2em;
+}
+.itn aside ul li .fa.we-icon{
+	text-align: center;
+	width: 1em;
+	height: 1em;
+	margin: 0 1em;
+	/* color: white; */
+	float: left;
+}
+
+.itn .fa.we-icon{
+    color: rgb(102, 102, 102);
+	
+}
+
+.we-auxSide{
+	float: right;
+	margin-right: 0.5em;
+}
+.we-auxSide .fa{
+    color: rgb(139, 139, 139);
+
+}
+
+header{padding: 0.5em}

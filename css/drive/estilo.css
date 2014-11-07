@@ -1,0 +1,236 @@
+body,
+input
+{
+	font-family: sans-serif;
+}
+
+header{
+	background: rgb(232, 232, 232);
+}
+.drv aside ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.drv aside ul li {
+/* padding: 0.2em 0; */
+/* height: 1.4em; */
+}
+.drv aside li.we-active{
+}
+.drv aside li.we-active a{
+	border-left-color: rgb(255, 0, 0); 
+}
+.drv aside li.we-active a:hover {
+    background: transparent;
+
+    cursor: default;
+    border-left-color: rgb(255, 0, 0);
+}
+
+.drv aside ul li ul{}
+
+
+.drv aside ul ul {
+	/* margin-left: 1em; */
+}
+
+.drv aside li a {
+	border-left-color: transparent;
+	border-left-width: 0.2em;
+	border-left-style: solid;
+	display: block;
+	padding: 0.4em 0;
+	padding-left: 0.5em;
+}
+
+.drv aside li a::before{
+	content: '';
+	color: rgb(90, 90, 90);
+	width: 1em;
+	height: 1em;
+	float: left;
+	display: inline-block; font: normal normal normal 14px/1 FontAwesome;
+	font-size: 1em;
+	text-rendering:auto;
+	-webkit-font-smoothing: antialiased;
+	text-align: center;
+}
+.drv aside li a.we-close::before {
+	content: '\f0da';
+}
+.drv aside li a.we-open::before {
+	content: '\f0d7';
+}
+
+.drv aside li li a {
+	padding-left: 1em;
+}
+.drv aside li li li a {
+	padding-left: 1.5em;
+}
+
+.drv aside li a:hover{
+    background: rgb(215, 215, 215);
+   /* border-left-color: rgb(39, 39, 39); 
+    border-left-width: 0.2em; 
+    border-left-style: solid;;
+    margin-left: 0;*/
+    border-left-color: rgb(107, 107, 107);;
+    /* border-left-color: rgb(39, 39, 39); */ /* border-left-width: 0.2em; */ /* border-left-style: solid; */ 
+}
+
+.drv input,
+.we-boton[href]
+{
+	/* color:black; */
+}
+
+.we-boton{
+	color: rgb(208, 208, 208);
+}
+.we-boton[href]{
+
+}
+.we-boton[href]:hover{
+
+}
+
+.we-buscar{
+	border:none;
+	color: rgb(140, 140, 140);
+}
+
+.we-buscar input{
+	background: transparent;
+}
+
+.we-bt-nav{
+
+}
+
+.we-bt-nav .we-boton{
+
+}
+
+.we-boton,
+.we-buscar
+{
+	background: rgb(240, 240, 240);
+}
+
+.we-boton,
+.we-buscar
+{
+	border-radius: 0.3em;
+}
+
+.drv aside ul li.we-active .we-text{
+    color: rgb(255, 0, 0);
+}
+
+.drv aside ul li .we-text{
+	color: rgb(69, 69, 69);
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.drv aside ul li .we-badge{
+	color: rgb(152, 152, 152);
+	border-radius: 0.2em;
+	padding: 0.2em;
+	float: right;
+	font-size: 0.8em;
+}
+.drv button, .we-boton {
+	color: white;
+	background: red;
+	padding: 0.3em 1em;
+	display: inline-block;
+}
+
+.drv aside .we-boton
+{
+	margin-left: 1em;
+}
+.drv aside .we-section > .we-title
+{
+	color: rgb(157, 157, 157);
+	margin-left: 1.2em;
+}
+.drv aside ul li .fa.we-icon{
+	text-align: center;
+	width: 1em;
+	height: 1em;
+	margin: 0 0.5em;
+	margin-left: 0.3em;
+	/* color: white; */
+	float: left;
+}
+
+.drv .fa.we-icon{
+	color: rgb(102, 102, 102);
+}
+
+.we-auxSide{
+	float: right;
+	margin-right: 0.5em;
+}
+.we-auxSide .fa{
+	color: rgb(139, 139, 139);
+}
+
+/* INICIO CALLOUT */
+.drv .we-callout{
+	text-align: center;
+	position: absolute;
+	/* width: 300px; */
+	z-index: 102;
+	cursor: default;
+	border-collapse: separate;
+}
+.drv .we-beakUp,
+.drv .we-beakLeft,
+.drv .we-beakRight,
+.drv .we-beakDown
+{
+	margin-left: -0.6em;
+	transform: rotate(45deg);
+	position: absolute;
+	z-index: -10;
+}
+.drv .we-beakDown{
+	bottom: -0.5em;
+}
+
+.drv .we-beakUp,
+.drv .we-beakLeft,
+.drv .we-beakRight,
+.drv .we-beakDown,
+.drv .we-callout {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #FFFFFF;
+	box-sizing: border-box;
+}
+
+.drv .we-beakUp,
+.drv .we-beakLeft,
+.drv .we-beakRight,
+.drv .we-beakDown,
+.drv .we-callout,
+.drv .we-callout .we-content
+{
+	background-color: #000;
+	color: white;
+}
+.drv .we-callout .we-content
+{
+    font-size: 0.6em;
+
+    padding: 1em 0.8em;
+}
+/* FIN CALLOUT */
+
+header{padding: 0.5em}

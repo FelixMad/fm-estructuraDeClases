@@ -1,0 +1,146 @@
+/**ESTO ANULA A VALORES BASICOS LOS ELEMENTOS DEL NAVEGADOR*/
+
+body,
+input,
+textarea,
+keygen,
+select,
+button
+{
+	font-family: sans-serif;
+}
+
+body {
+	display: block;
+	margin: 0;
+	font-size: medium;
+}
+
+h1,h2,h3,h4 {
+	display: block;
+	font-size: 1em;
+	font-weight: normal;
+	margin: 0;
+}
+
+i, cite, em, var, address, dfn {
+	font-style: italic;
+}
+strong, b {
+	font-weight: bold;
+}
+small {
+	font-size: smaller;
+}
+label {
+	cursor: default;
+}
+table {
+	display: table;
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+	white-space: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-size: medium;
+	font-variant: normal;
+	font-style: normal;
+	color: -webkit-text;
+	text-align: start;
+}
+
+thead {
+	display: table-header-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tbody {
+	display: table-row-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tfoot {
+	display: table-footer-group;
+	vertical-align: middle;
+	border-color: inherit;
+}
+tr {
+	display: table-row;
+	vertical-align: inherit;
+	border-color: inherit;
+}
+td, th {
+	display: table-cell;
+	vertical-align: inherit;
+}
+
+input:not([type="image" i]), 
+textarea {
+	box-sizing: border-box;
+}
+input,
+input[type="password" i],
+input[type="search" i]
+{
+	-webkit-appearance: textfield;
+	padding: 1px;
+	background-color: white;
+	border: 2px inset;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	-webkit-rtl-ordering: logical;
+	-webkit-user-select: text;
+	cursor: auto;
+}
+input[type="button" i],
+input[type="submit" i],
+input[type="reset" i],
+input[type="file" i]::-webkit-file-upload-button,
+button {
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	padding: 2px 6px 3px;
+	border: 2px outset buttonface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-color: buttonface;
+	box-sizing: border-box;
+}
+
+
+input,
+textarea,
+keygen,
+select,
+button 
+{
+	margin: 0em;
+	/*font: -webkit-small-control;*/
+	color: initial;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	text-indent: 0px;
+	text-shadow: none;
+	display: inline-block;
+	text-align: start;
+}
+input,
+textarea,
+keygen,
+select,
+button,
+meter,
+progress
+{
+	-webkit-writing-mode: horizontal-tb;
+}

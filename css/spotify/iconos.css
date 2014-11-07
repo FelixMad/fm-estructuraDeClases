@@ -1,0 +1,37 @@
+.lang-aceptar .fa::before{
+  content:"\f058";
+}
+.lang-cancelar .fa::before{
+  content:"\f057";
+}
+.lang-buscar .fa::before,
+.we-buscar label .fa::before
+{
+  content: "\f002";
+}
+.lang-pagar .fa::before{
+  content: "\f0d6";
+}
+.lang-anterior .fa::before{
+  content: "\f053";
+  /*content: "\f104";*/
+  /*content: "\f0a8";*/
+}
+.lang-siguiente .fa::before{
+  /*content: "\f0a9";*/
+  /*content: "\f105";*/
+  content: "\f054";
+}
+.lang-registrarse .fa::before{
+  content: "\f044";
+}
+.lang-calendario .fa::before{
+  content: "\f073";
+}
+.lang-musica .fa::before{
+  content: "\f001";
+}
+
+.lang-nuevo .fa::before{
+  content: "\f067";
+}

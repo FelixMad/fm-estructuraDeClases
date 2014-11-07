@@ -1,7 +1,21 @@
 <html>
   <head>
     <meta charset='utf-8' />
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/cleaner.css"/> <!--ESTO ANULA A VALORES BASICOS LOS ELEMENTOS DEL NAVEGADOR-->
+    <link rel="stylesheet" href="css/elements.css"/>
+
+    <!-- *************************************************************** -->
+
+    <!-- INICIO DE LA LIBRERIA DE ESTILOS PARA CUALQUIER PAGINA -->
+    <link rel="stylesheet" href="css/lib/tamano-libreria.css"/>                <!-- LIBRERIA DE CLASES DE TAMAÑOS -->
+    <link rel="stylesheet" href="css/lib/clases-libreria.css"/>                <!-- LIBRERIA DE CLASES BASICAS DE ESTILOS -->
+    <link rel="stylesheet" href="css/lib/color-libreria.css"/>                 <!-- LIBRERIA DE COLORES -->
+    <link rel="stylesheet" href="css/lib/iconos-libreria.css"/>                <!-- LIBRERIA DE ICONOS -->
+    <link rel="stylesheet" href="css/lib/clasesPersonalizadas-libreria.css"/>  <!-- LIBRERIA DE CLASES QUE CREAN ELEMENTOS NUEVOS -->
+    <!-- FIN DE LA LIBRERIA DE ESTILOS PARA CUALQUIER PAGINA -->
+
+    <!-- *************************************************************** -->
+
     <link rel="stylesheet" href="css/font-awesome.min.css"/>
     <script type="text/javascript" language="javascript" src="js/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" language="javascript" src="js/lang.js"></script>
@@ -40,20 +54,34 @@
       </tfoot>
     </table>
 
-    <div class="we-state we-highlight">
-      <div class="we-title"><i class="fa"></i><label>Hello world</label></div>
+    <div class="we-state">
+      <div class="we-title"><i class="fa"></i><label>Default</label></div>
       <div class="we-content">Hello world</div>
     </div>
 
 
-    <div class="we-state we-error">
-      <div class="we-title"><i class="fa"></i><label>Hello world</label></div>
+    <div class="we-state we-primary">
+      <div class="we-title"><i class="fa"></i><label>Primary</label></div>
       <div class="we-content">Hello world</div>
     </div>
 
+    <div class="we-state we-success">
+      <div class="we-title"><i class="fa"></i><label>Success</label></div>
+      <div class="we-content">Hello world</div>
+    </div>
+
+    <div class="we-state we-info">
+      <div class="we-title"><i class="fa"></i><label>Info</label></div>
+      <div class="we-content">Hello world</div>
+    </div>
 
     <div class="we-state we-warning">
-      <div class="we-title"><i class="fa"></i><label>Hello world</label></div>
+      <div class="we-title"><i class="fa"></i><label>Warning</label></div>
+      <div class="we-content">Hello world</div>
+    </div>
+
+    <div class="we-state we-danger">
+      <div class="we-title"><i class="fa"></i><label>Danger</label></div>
       <div class="we-content">Hello world</div>
     </div>
 
@@ -64,6 +92,7 @@
         Callout
       </div>
     </div>
+
 
 
 
@@ -96,45 +125,59 @@
         </div>  
       </div>
 
+      <div class="we-block we-form-group we-alignRight">
+        <div class="we-inline we-radio">
+          <input id="we-avanzado-radio-on----" type="radio" name="radio" value="on">
+          <label for="we-avanzado-radio-on----"><i class="fa"></i><label class="we-lang-on"></label></label>
+
+          <input id="we-avanzado-radio-off----" type="radio" name="radio" value="off">
+          <label for="we-avanzado-radio-off----"><i class="fa"></i><label class="we-lang-off"></label></label> 
+        </div>
+      </div>
 
       <div class="we-block we-form-group we-alignRight">
         <div class="we-inline we-radio">
           <input id="we-avanzado-radio-on--" type="radio" name="radio" value="on">
-          <label class="we-lang-on we-sizeBigger fa" for="we-avanzado-radio-on--"></label>
+          <label class="we-sizeBigger" for="we-avanzado-radio-on--"><i class="fa"></i><label class="we-lang-on"></label></label>
 
-          <input id="we-avanzado-radio-off---" type="radio" name="radio" value="off">
-          <label class="we-lang-off we-sizeBigger fa" for="we-avanzado-radio-off---"></label> 
+          <input id="we-avanzado-radio-off--" type="radio" name="radio" value="off">
+          <label class="we-sizeBigger" for="we-avanzado-radio-off--"><i class="fa"></i><label class="we-lang-off"></label></label> 
         </div>
       </div>
+
       <div class="we-block we-form-group we-alignRight">
         <div class="we-inline we-radio">
-          <input id="we-avanzado-radio-on-uno" type="radio" name="radio" value="on">
-          <label class="we-lang-on we-sizeBig fa" for="we-avanzado-radio-on-uno"></label>
+          <input id="we-avanzado-radio-on---" type="radio" name="radio" value="on">
+          <label class="we-sizeBig" for="we-avanzado-radio-on---"><i class="fa"></i><label class="we-lang-on"></label></label>
 
-          <input id="we-avanzado-radio-off-dos" type="radio" name="radio" value="off">
-          <label class="we-lang-off we-sizeBig fa" for="we-avanzado-radio-off-dos"></label> 
+          <input id="we-avanzado-radio-off---" type="radio" name="radio" value="off">
+          <label class="we-sizeBig" for="we-avanzado-radio-off---"><i class="fa"></i><label class="we-lang-off"></label></label> 
         </div>
       </div>
+
       <div class="we-block we-form-group we-alignRight">
         <div class="we-inline we-radio">
           <input id="we-avanzado-radio-on-" type="radio" name="radio" value="on">
-          <label class="we-lang-on we-sizeNormal fa" for="we-avanzado-radio-on-"></label>
+          <label class="we-sizeNormal" for="we-avanzado-radio-on-"><i class="fa"></i><label class="we-lang-on"></label></label>
 
           <input id="we-avanzado-radio-off-" type="radio" name="radio" value="off">
-          <label class="we-lang-off we-sizeNormal fa" for="we-avanzado-radio-off-"></label> 
+          <label class="we-sizeNormal" for="we-avanzado-radio-off-"><i class="fa"></i><label class="we-lang-off"></label></label> 
         </div>
       </div>
 
       <div class="we-block we-form-group we-alignLeft">
         <div class="we-checkbox">
           <div class="we-block">
-            <input id="we-checkbox-uno" type="checkbox" name="default" value=""><label class="fa we-sizeBigger" for="we-checkbox-uno">Hola mundo</label>
+            <input id="we-checkbox-uno" type="checkbox" name="default" value=""><label class="we-sizeBigger" for="we-checkbox-uno"><i class="fa"></i> Hola mundo</label>
           </div>
           <div class="we-block">
-            <input id="we-checkbox-dos" type="checkbox" name="default" value=""><label class="fa we-sizeBig" for="we-checkbox-dos">Hola mundo</label>
+            <input id="we-checkbox-dos" type="checkbox" name="default" value=""><label class="we-sizeBig" for="we-checkbox-dos"><i class="fa"></i> Hola mundo</label>
           </div>
           <div class="we-block">
-            <input id="we-checkbox-tres" type="checkbox" name="default" value=""><label class="fa we-sizeNormal" for="we-checkbox-tres">Hola mundo</label>
+            <input id="we-checkbox-tres" type="checkbox" name="default" value=""><label class="we-sizeNormal" for="we-checkbox-tres"><i class="fa"></i>Hola mundo</label>
+          </div>
+          <div class="we-block">
+            <input id="we-checkbox-cuatro" type="checkbox" name="default" value=""><label for="we-checkbox-cuatro"><i class="fa"></i>Hola mundo</label>
           </div>
         </div>
       </div>
@@ -168,240 +211,169 @@
 
       <div class="we-block we-form-group we-alignRight">
         <div class="we-tableCell">
-          <input type="text" class="we-sizeBigger we-inline we-vAlingMiddle"/><button class="we-bt-search we-sizeBigger we-enable we-lang-buscar we-vAlingMiddle"><i class="fa"></i></button>
-        </div>
-      </div>
-
-      
-      <div class="we-block we-form-group we-alignRight">
-        <div class="we-tableCell">
-          <input type="text" class="we-sizeBig we-inline we-vAlingMiddle"/><button class="we-bt-search we-sizeBig we-enable we-lang-buscar we-vAlingMiddle"><i class="fa"></i></button>
+          <div class="we-buscar">
+            <label class="we-sizeNormal" for="input-buscar"><i class="fa"></i></label><input id="input-buscar" class="we-sizeNormal" type="text"/><button class="we-sizeNormal"><i class="fa lang-borrar"></i></button>
+          </div>
         </div>
       </div>
 
       <div class="we-block we-form-group we-alignRight">
         <div class="we-tableCell">
-          <input type="text" class="we-sizeNormal we-inline we-vAlingMiddle"/><button class="we-bt-search we-sizeNormal we-enable we-lang-buscar we-vAlingMiddle"><i class="fa"></i></button>
+          <input type="text" class="we-sizeBigger we-inline we-vAlingMiddle"/>
+          <button class="we-sizeBigger lang-buscar we-vAlingMiddle"><i class="fa"></i></button>
+        </div>
+      </div>
+      <div class="we-block we-form-group we-alignRight">
+        <div class="we-tableCell">
+          <input type="text" class="we-sizeBigger we-inline we-vAlingMiddle"/>
+          <button class="we-sizeBigger lang-buscar we-vAlingMiddle we-noText"><i class="fa"></i></button>
         </div>
       </div>
 
-       <div class="we-block we-form-group we-alignRight">
-          <button class="lang-aceptar we-sizeNormal" disabled><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeNormal"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeNormal" disabled><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeNormal we-noText"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeNormal we-noText"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeNormal" disabled></button>
-          <button class="lang-aceptar we-sizeNormal"></button>
-      </div>
       <div class="we-block we-form-group we-alignRight">
-          <button class="lang-aceptar we-sizeBig" disabled><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBig"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBig we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBig we-noText"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBig" disabled></button>
-          <button class="lang-aceptar we-sizeBig"></button>
+        <div class="we-tableCell">
+          <input type="text" class="we-sizeBig we-inline we-vAlingMiddle"/>
+          <button class="we-sizeBig lang-buscar we-vAlingMiddle"><i class="fa"></i></button>
+        </div>
       </div>
+
       <div class="we-block we-form-group we-alignRight">
-          <button class="lang-aceptar we-sizeBigger" disabled><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBigger"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBigger we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBigger we-noText"><i class="fa"></i></button>
-          <button class="lang-aceptar we-sizeBigger" disabled></button>
-          <button class="lang-aceptar we-sizeBigger"></button>
+        <div class="we-tableCell">
+          <input type="text" class="we-sizeBig we-inline we-vAlingMiddle"/>
+          <button class="we-sizeBig lang-buscar we-vAlingMiddle we-noText"><i class="fa"></i></button>
+        </div>
+      </div>
+
+      <div class="we-block we-form-group we-alignRight">
+        <div class="we-tableCell">
+          <input type="text" class="we-sizeNormal we-inline we-vAlingMiddle"/>
+          <button class="we-sizeNormal lang-buscar we-vAlingMiddle"><i class="fa"></i></button>
+        </div>
+      </div>
+
+      <div class="we-block we-form-group we-alignRight">
+        <div class="we-tableCell">
+          <input type="text" class="we-sizeNormal we-inline we-vAlingMiddle"/>
+          <button class="we-sizeNormal lang-buscar we-vAlingMiddle we-noText"><i class="fa"></i></button>
+        </div>
       </div>
 
       <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-cancelar we-sizeNormal" disabled><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeNormal"><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeNormal we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeNormal we-noText"><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeNormal" disabled></button>
-          <button class="lang-cancelar we-sizeNormal"></button>
+        <button class="lang-anterior we-sizeNormal we-turquesa" disabled><i class="fa"></i><label></label></button>
+        <button class="lang-anterior we-sizeNormal we-turquesa"><i class="fa"></i><label></label></button>
+        <button class="lang-anterior we-sizeNormal we-turquesa we-noText" disabled><i class="fa"></i></button>
+        <button class="lang-anterior we-sizeNormal we-turquesa we-noText"><i class="fa"></i></button>
+        <button class="lang-anterior we-sizeNormal we-turquesa" disabled><label></label></button>
+        <button class="lang-anterior we-sizeNormal we-turquesa"><label></label></button>
       </div>
       <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-cancelar we-sizeBig" disabled><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBig"><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBig we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBig we-noText"><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBig" disabled></button>
-          <button class="lang-cancelar we-sizeBig"></button>
-      </div>
-      <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-cancelar we-sizeBigger" disabled><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBigger"><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBigger we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBigger we-noText"><i class="fa"></i></button>
-          <button class="lang-cancelar we-sizeBigger" disabled></button>
-          <button class="lang-cancelar we-sizeBigger"></button>
-      </div>
-
-       <div class="we-block we-form-group we-alignRight">
-          <button class="lang-buscar we-sizeNormal" disabled><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeNormal"><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeNormal we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeNormal we-noText"><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeNormal" disabled></button>
-          <button class="lang-buscar we-sizeNormal"></button>
-      </div>
-      <div class="we-block we-form-group we-alignRight">
-          <button class="lang-buscar we-sizeBig" disabled><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBig"><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBig we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBig we-noText"><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBig" disabled></button>
-          <button class="lang-buscar we-sizeBig"></button>
+        <button class="lang-anterior we-sizeBig we-turquesa" disabled><i class="fa"></i><label></label></button>
+        <button class="lang-anterior we-sizeBig we-turquesa"><i class="fa"></i><label></label></button>
+        <button class="lang-anterior we-sizeBig we-turquesa we-noText" disabled><i class="fa"></i></button>
+        <button class="lang-anterior we-sizeBig we-turquesa we-noText"><i class="fa"></i></button>
+        <button class="lang-anterior we-sizeBig we-turquesa" disabled><label></label></button>
+        <button class="lang-anterior we-sizeBig we-turquesa"><label></label></button>
       </div> 
-
+      <div class="we-tableCell we-form-group we-alignLeft">
+        <button class="lang-anterior we-sizeBigger we-turquesa" disabled><i class="fa"></i><label></label></button>
+        <button class="lang-anterior we-sizeBigger we-turquesa we-vAlingBottom"><i class="fa"></i><label></label></button>
+        <button class="lang-anterior we-sizeBigger we-turquesa we-noText" disabled><i class="fa"></i></button>
+        <button class="lang-anterior we-sizeBigger we-turquesa we-noText"><i class="fa"></i></button>
+        <button class="lang-anterior we-sizeBigger we-turquesa" disabled><label></label></button>
+        <button class="lang-anterior we-sizeBigger we-turquesa"><label></label></button>
+      </div>
+    <hr/>
       <div class="we-block we-form-group we-alignRight">
-          <button class="lang-buscar we-sizeBigger" disabled><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBigger"><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBigger we-noText" disabled><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBigger we-noText"><i class="fa"></i></button>
-          <button class="lang-buscar we-sizeBigger" disabled></button>
-          <button class="lang-buscar we-sizeBigger"></button>
-      </div>
-
-        <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-pagar we-sizeNormal we-naranja" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-naranja"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-noText we-naranja" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-noText we-naranja"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-naranja" disabled></button>
-          <button class="lang-pagar we-sizeNormal we-naranja"></button>
-      </div>
-      <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-pagar we-sizeBig we-naranja" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-naranja"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-noText we-naranja" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-noText we-naranja"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-naranja" disabled></button>
-          <button class="lang-pagar we-sizeBig we-naranja"></button>
-      </div> 
-
-      <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-pagar we-sizeBigger we-naranja" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-naranja"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-noText we-naranja" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-noText we-naranja"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-naranja" disabled></button>
-          <button class="lang-pagar we-sizeBigger we-naranja"></button>
-      </div>
-
-      <div class="we-block we-form-group we-alignRight">
-          <button class="lang-pagar we-sizeNormal we-violeta" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-violeta"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-noText we-violeta" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-noText we-violeta"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeNormal we-violeta" disabled></button>
-          <button class="lang-pagar we-sizeNormal we-violeta"></button>
+        <button class="lang-siguiente we-sizeNormal we-cyan" disabled><label></label><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeNormal we-cyan"><label></label><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeNormal we-noText we-cyan" disabled><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeNormal we-noText we-cyan"><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeNormal we-cyan" disabled><label></label></button>
+        <button class="lang-siguiente we-sizeNormal we-cyan"><label></label></button>
       </div>
       <div class="we-block we-form-group we-alignRight">
-          <button class="lang-pagar we-sizeBig we-violeta" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-violeta"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-noText we-violeta" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-noText we-violeta"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBig we-violeta" disabled></button>
-          <button class="lang-pagar we-sizeBig we-violeta"></button>
-      </div> 
-
-      <div class="we-block we-form-group we-alignRight">
-          <button class="lang-pagar we-sizeBigger we-violeta" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-violeta"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-noText we-violeta" disabled><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-noText we-violeta"><i class="fa"></i></button>
-          <button class="lang-pagar we-sizeBigger we-violeta" disabled></button>
-          <button class="lang-pagar we-sizeBigger we-violeta"></button>
-      </div>
-
-      <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-anterior we-sizeNormal we-turquesa" disabled><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeNormal we-turquesa"><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeNormal we-noText we-turquesa" disabled><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeNormal we-noText we-turquesa"><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeNormal we-turquesa" disabled></button>
-          <button class="lang-anterior we-sizeNormal we-turquesa"></button>
-      </div>
-      <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-anterior we-sizeBig we-turquesa" disabled><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBig we-turquesa"><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBig we-noText we-turquesa" disabled><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBig we-noText we-turquesa"><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBig we-turquesa" disabled></button>
-          <button class="lang-anterior we-sizeBig we-turquesa"></button>
-      </div> 
-
-      <div class="we-block we-form-group we-alignLeft">
-          <button class="lang-anterior we-sizeBigger we-turquesa" disabled><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBigger we-turquesa"><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBigger we-noText we-turquesa" disabled><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBigger we-noText we-turquesa"><i class="fa"></i></button>
-          <button class="lang-anterior we-sizeBigger we-turquesa" disabled></button>
-          <button class="lang-anterior we-sizeBigger we-turquesa"></button>
-      </div>
-
-
-
-
-      <div class="we-block we-form-group we-alignRight">
-          <button class="lang-siguiente we-sizeNormal we-cyan" disabled><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeNormal we-cyan"><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeNormal we-noText we-cyan" disabled><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeNormal we-noText we-cyan"><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeNormal we-cyan" disabled></button>
-          <button class="lang-siguiente we-sizeNormal we-cyan"></button>
-      </div>
-      <div class="we-block we-form-group we-alignRight">
-          <button class="lang-siguiente we-sizeBig we-cyan" disabled><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBig we-cyan"><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBig we-noText we-cyan" disabled><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBig we-noText we-cyan"><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBig we-cyan" disabled></button>
-          <button class="lang-siguiente we-sizeBig we-cyan"></button>
-      </div> 
-
-      <div class="we-block we-form-group we-alignRight">
-          <button class="lang-siguiente we-sizeBigger we-cyan" disabled><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBigger we-cyan"><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBigger we-noText we-cyan" disabled><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBigger we-noText we-cyan"><i class="fa"></i></button>
-          <button class="lang-siguiente we-sizeBigger we-cyan" disabled></button>
-          <button class="lang-siguiente we-sizeBigger we-cyan"></button>
-      </div>
-
-      <div class="we-block we-form-group we-alignRight">
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeNormal we-negro"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeNormal we-noText we-negro"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeNormal we-negro"><i class="fa"></i></a>
-      </div>
-      <div class="we-block we-form-group we-alignRight">
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeBig we-negro"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeBig we-noText we-negro"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeBig we-negro"><i class="fa"></i></a>
+        <button class="lang-siguiente we-sizeBig we-cyan" disabled><label></label><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBig we-cyan"><label></label><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBig we-noText we-cyan" disabled><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBig we-noText we-cyan"><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBig we-cyan" disabled><label></label></button>
+        <button class="lang-siguiente we-sizeBig we-cyan"><label></label></button>
       </div> 
       <div class="we-block we-form-group we-alignRight">
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeBigger we-negro"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeBigger we-noText we-negro"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-siguiente we-sizeBigger we-negro"><i class="fa"></i></a>
+        <button class="lang-siguiente we-sizeBigger we-cyan" disabled><label></label><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBigger we-cyan"><label></label><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBigger we-noText we-cyan" disabled><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBigger we-noText we-cyan"><i class="fa"></i></button>
+        <button class="lang-siguiente we-sizeBigger we-cyan" disabled><label></label></button>
+        <button class="lang-siguiente we-sizeBigger we-cyan"><label></label></button>
       </div>
-
-
-
+    <hr/>
+      <div class="we-block we-form-group we-alignLeft">
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeNormal we-negro"><label></label></a>
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeNormal we-negro we-noText"><i class="fa"></i></a>
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeNormal we-negro"><label></label><i class="fa"></i></a>
+      </div>
+      <div class="we-block we-form-group we-alignLeft">
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeBig we-negro"><label></label></a>
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeBig we-negro we-noText"><i class="fa we-block"></i></a>
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeBig we-negro"><label></label><i class="fa"></i></a>
+      </div> 
+      <div class="we-block we-form-group we-alignLeft">
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeBigger we-negro"><label></label></a>
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeBigger we-negro we-noText"><i class="fa we-block"></i></a>
+          <a href="#" class="we-boton we-inline lang-siguiente we-sizeBigger we-negro"><label></label><i class="fa"></i></a>
+      </div>
+    <hr/>
       <div class="we-block we-form-group we-alignRight">
-          <a href="#" class="we-icon we-inline lang-musica we-sizeNormal we-turquesa"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-musica we-sizeNormal we-noText we-turquesa"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-musica we-sizeNormal we-turquesa"><i class="fa"></i></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeNormal we-cyan"><label></label></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeNormal we-cyan we-noText"><i class="fa"></i></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeNormal we-cyan"><i class="fa"></i><label></label></a>
       </div>
       <div class="we-block we-form-group we-alignRight">
-          <a href="#" class="we-icon we-inline lang-musica we-sizeBig we-turquesa"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-musica we-sizeBig we-noText we-turquesa"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-musica we-sizeBig we-turquesa"><i class="fa"></i></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeBig we-cyan"><label></label></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeBig we-cyan we-noText"><i class="fa we-block"></i></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeBig we-cyan"><i class="fa"></i><label></label></a>
       </div> 
       <div class="we-block we-form-group we-alignRight">
-          <a href="#" class="we-icon we-inline lang-musica we-sizeBigger we-turquesa"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-musica we-sizeBigger we-noText we-turquesa"><i class="fa we-block"></i></a>
-          <a href="#" class="we-icon we-inline lang-musica we-sizeBigger we-turquesa"><i class="fa"></i></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeBigger we-cyan"><label></label></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeBigger we-cyan we-noText"><i class="fa we-block"></i></a>
+          <a href="#" class="we-boton we-inline lang-registrarse we-sizeBigger we-cyan"><i class="fa"></i><label></label></a>
       </div>
+    <hr/>
+
+      <div class="we-block we-form-group we-alignLeft">
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeNormal we-negro"><i class="fa we-block"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeNormal we-negro"><i class="fa"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeNormal we-noText we-negro"><i class="fa"></i></a>
+      </div>
+      <div class="we-block we-form-group we-alignLeft">
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeBig we-negro"><i class="fa we-block"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeBig we-negro"><i class="fa"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeBig we-noText we-negro"><i class="fa"></i></a>
+      </div> 
+      <div class="we-block we-form-group we-alignLeft">
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeBigger we-negro"><i class="fa we-block"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeBigger we-negro"><i class="fa"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-calendario we-sizeBigger we-noText we-negro"><i class="fa"></i></a>
+      </div>
+    <hr/>
+
+     <div class="we-block we-form-group we-alignRight">
+          <a href="#" class="we-icon we-inline lang-musica we-sizeNormal we-turquesa"><i class="fa we-block"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-musica we-sizeNormal we-turquesa"><i class="fa"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-musica we-sizeNormal we-turquesa we-noText"><i class="fa"></i></a>
+      </div>
+      <div class="we-block we-form-group we-alignRight">
+          <a href="#" class="we-icon we-inline lang-musica we-sizeBig we-turquesa"><i class="fa we-block"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-musica we-sizeBig we-turquesa"><i class="fa"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-musica we-sizeBig we-turquesa we-noText"><i class="fa"></i></a>
+      </div> 
+      <div class="we-block we-form-group we-alignRight">
+          <a href="#" class="we-icon we-inline lang-musica we-sizeBigger we-turquesa"><i class="fa we-block"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-musica we-sizeBigger we-turquesa"><i class="fa"></i><label></label></a>
+          <a href="#" class="we-icon we-inline lang-musica we-sizeBigger we-turquesa we-noText"><i class="fa"></i></a>
+      </div>
+    <hr/>
 
     </div>
   </body>

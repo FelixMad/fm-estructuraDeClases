@@ -21,6 +21,12 @@ $(document).ready(function(){
     var langAnterior = "Anterior";
     var langSiguiente = "Siguiente";
     var langMusica = "Musica";
+    var langRegistrarse = "Registrarse";
+    var langCalendario = "Calendario";
+    var langFavoritos = "Favoritos";
+    var langEducacion = "Educación";
+    var langEstadisticas = "Estadisticas";
+    var langGuardar = "Guardar";
 
     var langOff = "Off";
     var langOn = "On";
@@ -47,16 +53,20 @@ $(document).ready(function(){
     $('.we-lang-mail').text(langMail);
     $('.we-lang-esDeWES').text(langEsDeWES);
 
-    $('.lang-aceptar').not('.we-noText').append(langAceptar); 
-    $('.lang-cancelar').not('.we-noText').append(langCancelar);
-    $('.lang-buscar').not('.we-noText').append(langBuscar);
-    $('.lang-pagar').not('.we-noText').append(langPagar);
-    $('.lang-anterior').not('.we-noText').append(langAnterior);
-    $('.lang-siguiente').not('.we-noText').append(langSiguiente);
-    $('.lang-musica').not('.we-noText').append(langMusica);
+    $('.lang-aceptar label').text(langAceptar); 
+    $('.lang-cancelar label').text(langCancelar);
+    $('.lang-buscar label').text(langBuscar);
+    $('.lang-pagar label').text(langPagar);
 
+    $('.lang-anterior label').text(langAnterior);
+    $('.lang-anterior').attr('title',langAnterior);
 
+    $('.lang-siguiente label').text(langSiguiente);
+    $('.lang-siguiente').attr('title',langSiguiente);
 
+    $('.lang-musica label').text(langMusica);
+    $('.lang-registrarse label').text(langRegistrarse);
+    $('.lang-calendario label').text(langCalendario);
 
     $('.we-lang-off').text(langOff);
     $('.we-lang-on').text(langOn);
@@ -65,6 +75,18 @@ $(document).ready(function(){
     
     $('.we-lang-precargando').text(langPrecargando);
     $('.we-lang-logIncorporaciones').text(langLogIncorporaciones);
+
+    $('.lang-favoritos .we-text').text(langFavoritos);
+    $('.lang-educacion .we-text').text(langEducacion);
+    $('.lang-estadisticas .we-text').text(langEstadisticas);
+    $('.lang-guardar .we-text').text(langGuardar);
+
+
+
+
+
+    
+
 })
 
 

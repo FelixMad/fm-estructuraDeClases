@@ -1,0 +1,233 @@
+/*LIBRERIA PARA ESTABLECER*/
+
+.we-modalWindow {
+  background-color: rgba(0,0,0,0.8);
+  color:#fff;
+}
+
+.ui-state-focus{
+  background: grey;
+}
+ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+  background: white;
+}
+
+.we-table li:nth-of-type(1),
+.we-table li:nth-of-type(3),
+.we-table li:nth-of-type(5)
+{
+  background: grey;
+}
+
+.we .we-switch input[type=radio] + label::before{
+  background-color: #aaa;
+  color: #aaa;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+}
+
+.we .we-switch input[type=radio]:checked + label::before{
+  background-color: red;
+  color: red;
+}
+
+.we-state{
+  background: rgb(228, 228, 228);
+  border: 1px solid rgb(178, 178, 178);
+}
+.we-state.we-warning{
+  background: rgb(255, 211, 117);
+  border: 1px solid rgb(207, 152, 36);
+}
+.we-state.we-danger {
+  background: rgb(255, 98, 98);
+  border: 1px solid rgb(157, 29, 29);
+}
+.we-state.we-info{
+  background: rgb(117, 239, 255);
+  border: 1px solid rgb(39, 151, 166);
+}
+.we-state.we-success{
+  background: rgb(137, 236, 130);
+  border: 1px solid rgb(48, 157, 40);
+}
+.we-state.we-primary{
+  background: rgb(207, 235, 255);
+  border: 1px solid rgb(72, 149, 203);
+}
+
+.we .we-section:nth-of-type(1) .we-section-title{
+  background: rgb(38, 199, 145);
+}
+.we .we-section:nth-of-type(2) .we-section-title{
+  background: rgb(229, 147, 49);
+}
+.we .we-section:nth-of-type(3) .we-section-title{
+  background: rgb(107, 164, 215);
+}
+
+.we-beakUp,
+.we-beakLeft,
+.we-beakRight,
+.we-beakDown,
+.we-callout,
+.we-callout .we-content
+{
+  background-color: #FFFFFF;
+}
+
+.we-beakUp,
+.we-beakLeft,
+.we-beakRight,
+.we-beakDown,
+.we-callout{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #d1d1d1;
+}
+
+
+
+.we-icon,
+.we-boton
+{
+  /*color: white;*/
+}
+.we-icon:hover,
+.we-boton:hover
+{
+  /*color: white;*/
+}
+.we-icon:active,
+.we-boton:active
+{
+  /*color: white;*/
+}
+.we-icon:visited,
+.we-boton:visited
+{
+  /* color: white; */
+}
+.we-icon:focus,
+.we-boton:focus
+{
+  /*color: white;*/
+}
+
+.we button
+{
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-color: rgba(7, 4, 107, 0.85);
+  color: white;
+  background: rgb(42, 123, 165);
+  box-shadow: 0px 1px 3px #666666;
+  text-shadow: 0px -1px 0px rgba(16, 10, 110, 0.61);
+}
+.we button[disabled]{
+  background: rgb(121, 178, 208);
+  border-color: rgba(87, 152, 192, 0.85);
+  text-shadow: 0px -1px 0px rgba(95, 90, 179, 0.61);
+}
+
+.we-verde{
+  background: rgb(64, 165, 42);
+}
+
+.we button.lang-aceptar,
+.we button.we-verde
+{
+  border-color: rgba(57, 107, 4, 0.22);
+  text-shadow: 0px -1px 0px rgba(57, 107, 4, 0.61);
+}
+
+.we button.lang-aceptar[disabled],
+.we button.we-verde[disabled]
+{
+  background: rgba(64, 165, 42, 0.47);
+  border-color: rgba(57, 107, 4, 0.22);
+  text-shadow: 0px -1px 0px rgba(57, 107, 4, 0.61);
+}
+
+.we-bgRojo{
+  background: rgba(200, 36, 49, 1);
+}
+
+.we button.lang-cancelar,
+.we button.we-bgRojo
+{
+  border-color: rgba(107, 4, 4, 1);
+  text-shadow: 0px -1px 0px rgba(107, 4, 4, 1);
+}
+
+.we button.lang-cancelar[disabled],
+.we button.we-bgRojo[disabled]
+{
+  background: rgba(200, 36, 49, 0.67);
+  border-color: rgba(107, 4, 4, 0.13);
+  text-shadow: 0px -1px 0px rgba(107, 4, 4, 0.4);
+}
+.we button.we-naranja{
+  background: rgba(200, 123, 36, 1);
+  text-shadow: 0px -1px 0px rgba(145, 70, 37, 1);
+  border-color: rgba(145, 70, 37, 1)
+}
+.we button.we-naranja[disabled]{
+  background: rgba(223, 174, 119, 1);
+  border-color: rgba(187, 135, 112, 1);
+  text-shadow: 0px -1px 0px rgba(187, 135, 112, 1);;
+}
+.we button.we-violeta{
+  background: rgba(213, 17, 151, 1);
+  border-color: rgba(145, 37, 115, 1);
+  text-shadow: 0px -1px 0px rgba(145, 37, 115, 1);
+}
+.we button.we-violeta[disabled]{
+  background: rgba(218, 136, 192, 1);
+  border-color: rgba(192, 113, 170, 1);
+  text-shadow: 0px -1px 0px rgba(192, 113, 170, 1);
+}
+
+.we-cyan{
+  background: cyan !important;
+}
+.we-cyan:hover{
+  background: rgb(161, 255, 255) !important;
+}
+.we-cyan:active{
+  background: rgb(161, 255, 255) !important;
+}
+.we button.we-cyan{
+  border-color: rgb(19, 202, 202);
+  text-shadow: 0px -1px 0px rgb(19, 202, 202);
+}
+.we button.we-cyan[disabled]{
+  background: rgb(189, 255, 255);
+  border-color: rgb(133, 231, 231);
+  text-shadow: 0px -1px 0px rgb(133, 231, 231);
+}
+
+.we-rosa{
+  background: pink;
+}
+
+.we-negro{
+  background: black;
+}
+
+.we-turquesa{
+  background: turquoise !important;
+}
+.we button.we-turquesa{
+  background: turquoise;
+  border-color: rgb(34, 174, 160);
+  text-shadow: 0px -1px 0px rgb(34, 174, 160);
+}
+.we button.we-turquesa[disabled]{
+  background: rgb(181, 236, 230);
+  border-color: rgb(139, 203, 197);
+  text-shadow: 0px -1px 0px rgb(139, 203, 197);
+}
+
+label.we-disabled{
+  color:grey;
+}

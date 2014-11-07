@@ -148,10 +148,35 @@ body{
 }
 
 .we button .fa::before{
+  
+}
+.we button .fa{
   margin-right: 0.3em;
 }
-.we button.we-noText .fa::before{
+
+.we button.lang-siguiente .fa,
+.we-boton.lang-siguiente .fa
+{
+  margin-left: 0.3em;
+  margin-right: 0em;
+}
+.we button.lang-siguiente .fa::before,
+.we-boton.lang-siguiente .fa::before
+{
+
+}
+
+.we button.we-noText .fa,
+.we-boton.we-noText .fa
+{
   margin-right: 0;
+  margin-left: 0;
+}
+
+.we button.we-noText .fa::before,
+.we-boton.we-noText.lang-siguiente .fa::before
+{
+
 }
 
 .we label{}
@@ -203,14 +228,27 @@ button.we-disabled
   width: 47px;
 }
 
-.we button{
-  padding: 0.4em 0.8em;
+.we button,
+.we-boton{
+  padding: 0.4em 0.8em 0.3em 0.8em;
 }
+
+.we-boton.we-noText,
+.we button.we-noText
+{
+  padding: 0.4em 0.4em 0.3em 0.4em;
+}
+
+
+
 .we-icon{
   padding: 0.4em 0.8em;
 }
 .we-icon.we-noText{
-  padding: 0.9em 1.1em;
+  padding: 0.4em;
+}
+.we-icon.we-noText .fa{
+  margin-right: 0;
 }
 
 
@@ -220,31 +258,57 @@ button.we-disabled
   padding: 0.3em;
 }
 .we-select{
-  padding: 0.5em 0.3em;
+  padding: 0.4em 0.7em;
 }
 
 button .fa,
-select + .we-select .fa
+select + .we-select .fa,
+.we-icon .fa,
+.we-boton .fa
 {
-  font-size:1em !important
+  font-size: inherit;
+  line-height: inherit;
+  width: 1em;
+  text-align: center;
+  margin-right: 0.3em;
 }
-.we-icon .fa{
-  font-size: 1em;
-}
+
+
 .we-icon .fa::before{
-  margin-right:0.5em
+  /*margin-right:0.5em*/
 }
 
 .we-icon .fa.we-block{
-  font-size:3em;
+  font-size: 2.5em;
+  line-height: 1em;
+  margin: 0.2em 0.2em 0 0.2em;
+  width: inherit;
 }
+.we-icon .fa.we-block + label{
+  margin-bottom: 0.2em;
+  display: block;
+  width: 4em;
+}
+
+.we-icon.we-noText .fa.we-block{
+  font-size: 3em;
+}
+
+
+
+.we-icon .fa.we-block + label{
+  font-size: 0.7em;
+}
+
+
 .we-icon .fa.we-block::before{
-  margin-right:0
+  /*margin-right:0*/
 }
 
 
 .we-select {
   position:absolute;
+  right: 0;
 }
 
 .we-select i.fa::after {
@@ -255,13 +319,13 @@ select + .we-select .fa
 }
 
 .we-select.we-sizeNormal{  
-  right: 25px;
+
 }
 .we-select.we-sizeBig {
-  right: 27px;
+
 }
 .we-select.we-sizeBigger{
-  right: 30px;
+
 }
 
 .we-ellipsis{
@@ -314,6 +378,12 @@ select + .we-select .fa
 .lang-siguiente .fa::before{
   /*content: "\f0a9";*/
   content: "\f105";
+}
+.lang-registrarse .fa::before{
+  content: "\f044";
+}
+.lang-calendario .fa::before{
+  content: "\f073";
 }
 .lang-musica .fa::before{
   content: "\f001";
@@ -377,7 +447,7 @@ select + .we-select .fa
 .we-icon{
   text-align: center;
   font-weight: 100;
-  border-radius: 3em;
+  border-radius: 1em;
 }
 
 
@@ -629,30 +699,36 @@ ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
   text-shadow: 0px -1px 0px rgba(192, 113, 170, 1);
 }
 
+.we-cyan{
+  background: cyan !important;
+}
+.we-cyan:hover{
+  background: rgb(161, 255, 255) !important;
+}
+.we-cyan:active{
+  background: rgb(161, 255, 255) !important;
+}
 .we button.we-cyan{
-  background: cyan;
   border-color: rgb(19, 202, 202);
   text-shadow: 0px -1px 0px rgb(19, 202, 202);
 }
-
 .we button.we-cyan[disabled]{
   background: rgb(189, 255, 255);
   border-color: rgb(133, 231, 231);
   text-shadow: 0px -1px 0px rgb(133, 231, 231);
 }
 
-
-
+.we-rosa{
+  background: pink;
+}
 
 .we-negro{
   background: black;
 }
 
-
 .we-turquesa{
-  background: turquoise;
+  background: turquoise !important;
 }
-
 .we button.we-turquesa{
   background: turquoise;
   border-color: rgb(34, 174, 160);
@@ -668,32 +744,48 @@ label.we-disabled{
   color:grey;
 }
 .we a{
-  color: red;
 }
-a.we-icon{
+.we a label,
+.we-icon label,
+.we-boton label,
+.we button label
+{
+  cursor:pointer;
+}
+
+.we-icon,
+.we-boton
+{
   color: white;
 }
-a.we-icon:hover{
+.we-icon:hover,
+.we-boton:hover
+{
   color: white;
 }
-a.we-icon:active{
+.we-icon:active,
+.we-boton:active
+{
   color: white;
 }
-a.we-icon:visited{
+.we-icon:visited,
+.we-boton:visited
+{
   color: white;
 }
-a.we-icon:focus{
+.we-icon:focus,
+.we-boton:focus
+{
   color: white;
 }
 
-
-.we a:hover{}
-.we a:active{
-  color: white;
-  background: red;
+.we :hover{}
+.we :active{
 }
-.we a:visited{}
-.we a:focus{}
+.we :visited{}
+.we :focus{
+  outline: none;
+}
 
 /*****************************************/
 /*************** CLASES DE TAMAÃ‘O FUENTE **************************/
@@ -706,18 +798,22 @@ body{
 
 .we-sizesmall{
   font-size: 0.7em !important;
+  line-height: 1em;
 }
 
 .we-sizeNormal{
   font-size: 1em !important;
+  line-height: 1em;
 }
 
 .we-sizeBig{
   font-size: 1.3em !important;
+  line-height: 1em;
 }
 
 .we-sizeBigger{
   font-size: 1.6em !important;
+  line-height: 1em;
 }
 
 /*****************************************/

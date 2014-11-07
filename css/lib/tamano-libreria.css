@@ -1,0 +1,22 @@
+
+/*CLASE CREADAS PARA ESTABLECER TAMAÑOS*/
+
+.we-sizesmall{
+  font-size: 0.7em !important;
+  line-height: 1em;
+}
+
+.we-sizeNormal{
+  font-size: 1em !important;
+  line-height: 1em;
+}
+
+.we-sizeBig{
+  font-size: 1.3em !important;
+  line-height: 1em;
+}
+
+.we-sizeBigger{
+  font-size: 1.6em !important;
+  line-height: 1em;
+}

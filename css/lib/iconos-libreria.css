@@ -1,0 +1,44 @@
+.lang-aceptar .fa::before{
+  content:"\f058";
+}
+.lang-cancelar .fa::before{
+  content:"\f057";
+}
+.lang-buscar .fa::before{
+  content: "\f002";
+}
+.lang-pagar .fa::before{
+  content: "\f0d6";
+}
+.lang-anterior .fa::before{
+  /*content: "\f104";*/
+  /*content: "\f0a8";*/
+  content: "\f053";
+}
+.lang-siguiente .fa::before{
+  /*content: "\f0a9";*/
+  /*content: "\f105";*/
+  content: "\f054";
+}
+.lang-registrarse .fa::before{
+  content: "\f044";
+}
+.lang-calendario .fa::before{
+  content: "\f073";
+}
+.lang-musica .fa::before{
+  content: "\f001";
+}
+
+.lang-favoritos .fa.we-icon::before{
+	content: "\f005";
+}
+.lang-educacion .fa.we-icon::before{
+	content: "\f19d";
+}
+.lang-estadisticas .fa.we-icon::before{
+	content: "\f200";
+}
+.lang-guardar .fa.we-icon::before{
+	content: "\f0c7";
+}

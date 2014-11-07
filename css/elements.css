@@ -1,0 +1,166 @@
+input,
+label,
+button{
+  font-size: 1em;
+  line-height: 1em;
+  height: 1em;
+}
+
+.fa{
+  padding-top: 0.1em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
+
+:hover{}
+:active{
+}
+:visited{}
+:focus{
+  outline: none;
+}
+
+button:active{
+  border-bottom-width: 1px;
+}
+
+label{}
+
+input[type=checkbox]{
+}
+
+.we-checkbox input[type=checkbox],
+.we-radio input[type=radio],
+.we-switch input[type=radio]
+{
+  display: none
+}
+
+input[type=checkbox] + label,
+input[type=radio] + label
+{
+  cursor: pointer;  
+}
+
+.we-checkbox input[type=checkbox] + label i:before{
+  content: "\f0c8";
+}
+
+.we-checkbox input[type=checkbox]:checked + label i:before{
+  content: "\f14a";
+}
+
+.we-checkbox input[type=checkbox] + label.we-sizeBigger:before,
+.we-radio input[type=radio] + label.we-sizeBigger:before
+{
+  margin-right: 10px
+}
+
+.we-checkbox input[type=checkbox] + label.we-sizeBig:before,
+.we-radio input[type=radio] + label.we-sizeBig:before
+{
+  margin-right: 10px
+}
+.we-checkbox input[type=checkbox] + label.we-sizeNormal:before,
+.we-radio input[type=radio] + label.we-sizeNormal:before
+{
+  margin-right: 5px
+}
+
+
+.we-radio input[type=radio] + label .fa:before{
+  content: "\f111";
+}
+.we-radio input[type=radio]:checked + label .fa:before{
+  content: "\f192";
+}
+
+.we-radio input[type=radio] + label.we-sizeNormal:before{
+  /*content: "\f111";*/
+  /*margin-right: 5px;*/
+}
+
+
+.we-switch input[type=radio] + label{}
+
+.we-switch input[type=radio] + label:first-of-type::before{
+  border-radius: 5px 0 0 5px;
+}
+.we-switch input[type=radio] + label:last-of-type::before{
+  border-radius: 0 5px 5px 0;
+}
+.we-switch input[type=radio] + label::before{
+  content: ".";
+  display: inline-block;
+  width: 32px;
+  height: 24px;
+}
+.we-switch input[type=radio]:checked + label::before{}
+
+input[type=color]{}
+
+select{
+  cursor: pointer;
+  border-radius:0;
+  padding:3px;
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+}
+
+select[disabled]{
+
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button[disabled]{
+  cursor: default;
+}
+
+button:active {
+  text-decoration: none;
+}
+button:focus {
+  -webkit-focus-ring-color auto 5px;
+}
+
+button .fa::before{
+  
+}
+button .fa{
+  margin-right: 0.3em;
+}
+
+button.lang-siguiente .fa,
+.we-boton.lang-siguiente .fa
+{
+  margin-left: 0.3em;
+  margin-right: 0em;
+}
+button.lang-siguiente .fa::before,
+.we-boton.lang-siguiente .fa::before
+{
+
+}
+
+button.we-noText .fa,
+.we-boton.we-noText .fa
+{
+  margin-right: 0;
+  margin-left: 0;
+}
+
+button.we-noText .fa::before,
+.we-boton.we-noText.lang-siguiente .fa::before
+{
+
+}

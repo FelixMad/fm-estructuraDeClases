@@ -1,0 +1,164 @@
+body,
+a[href]{
+	color:rgb(208, 208, 208);
+}
+
+header,
+aside,
+section,
+footer
+{
+  background: rgb(39, 39, 39);
+}
+
+a{
+	color:rgb(103, 103, 103);;
+}
+a.we-boton[href]:hover{
+	color:white;
+}
+
+.we-buscar{
+	background: white;
+  border-radius: 1em;
+  color:black;
+}
+
+header{padding: 0.5em}
+
+.spf aside ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.spf aside ul li {
+	/* padding: 0.2em 0; */
+	/* height: 1.4em; */
+}
+.spf aside ul li a{
+	border-left-color: rgb(39, 39, 39);;
+	border-left-width: 0.2em;
+	border-left-style: solid;
+	display: block;
+	padding: 0.4em 0;
+}
+
+.spf aside ul li.we-active a{
+	border-left-color: red;
+}
+.spf aside ul li.we-active{
+	background: rgb(66, 66, 66);
+}
+
+.spf aside .we-section > .we-title{
+  text-transform: uppercase;
+}
+
+.we-auxSide{
+	float: right;
+	margin-right: 0.5em;
+}
+
+.lang-favoritos .fa.we-icon::before{
+	content: "\f005";
+}
+.lang-educacion .fa.we-icon::before{
+	content: "\f19d";
+}
+.lang-estadisticas .fa.we-icon::before{
+	content: "\f200";
+}
+.lang-guardar .fa.we-icon::before{
+	content: "\f0c7";
+}
+
+.spf aside ul li .fa.we-icon{
+	text-align: center;
+	width: 1em;
+	height: 1em;
+	margin: 0 1em;
+	color: white;
+	float: left;
+}
+
+.spf aside ul li.we-active .we-text{
+	color: white;
+}
+
+.spf aside ul li .we-text{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.spf aside ul li .we-badge{
+	background: rgb(94, 94, 94);
+	border-radius: 0.2em;
+	padding: 0.2em;
+	float: right;
+	font-size: 0.8em;
+}
+.spf button, .we-boton {
+	padding: 0.2em 0.5em;
+	display: inline-block;
+}
+
+.we-buscar button{
+	padding: 0;
+	display: inline-block;
+}
+
+.spf aside .we-boton
+{
+   margin-left: 0.7em;
+}
+.spf aside .we-section > .we-title
+{
+   margin-left: 1.2em;
+}
+
+.we-badge{
+
+}
+
+.we-boton{
+    border-radius: 0.2em;
+    background: black;
+
+    color: white !important;
+}
+.we-boton .fa.we-icon{
+
+}
+.we-boton .we-text{
+    display: inline-block;
+
+}
+
+
+ol ul, ul ol, ul ul, ol ol {
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+}
+
+ul ul, ol ul {
+	
+}
+ul, menu, dir {
+	display: block;
+	list-style-type: disc;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	-webkit-padding-start: 40px;
+}
+li {
+	display: list-item;
+	text-align: -webkit-match-parent;
+}
+
+
+
+

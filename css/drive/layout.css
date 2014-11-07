@@ -1,0 +1,42 @@
+
+/*ESTRUCTURA PARA LA COMPOSICIÓN EN PANTALLA PARA ORDENADORES*/
+
+.drv header{
+	position: absolute;
+	height: 5em;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.drv nav{
+}
+
+.drv aside{
+	background: rgb(231, 231, 231);
+	float: left;
+	position: absolute;
+	/*min-width: 12.6em;*/
+	/*max-width: 24.6em;*/
+	width: 12.6em;
+	top: 5em;
+	left: 0;
+	bottom: 5em;
+	overflow-y: overlay;
+}
+.drv section{
+	position: absolute;
+	right: 0;
+	top: 5em;
+	left: 12.6em;
+	bottom: 5em;
+}
+
+.drv article{
+}
+.drv footer{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 5em;
+}

@@ -1,0 +1,38 @@
+/*LIBRERIA DE CLASES BASICAS*/
+
+.we-inline{
+  display: inline-block !important;
+}
+.we-block{
+  display: block !important;
+}
+
+.we-tableRow{
+  display: table-row !important;
+}
+
+.we-tableCell{
+  display: table-cell !important;
+}
+.we-vAlingMiddle{
+  vertical-align: middle !important;
+}
+.we-vAlingBottom{
+  vertical-align: bottom !important;
+}
+
+.we-alignRight{
+  text-align: right !important;
+}
+.we-alignCenter{
+  text-align: center !important;
+}
+
+.we-cursorPointer{
+  cursor: pointer !important;
+}
+
+.we-textUppercase{
+  text-transform: uppercase !important;
+}
+

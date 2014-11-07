@@ -1,0 +1,39 @@
+
+/*ESTRUCTURA PARA LA COMPOSICIÓN EN PANTALLA PARA ORDENADORES*/
+
+.itn header{
+	position: absolute;
+	height: 5em;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.itn nav{
+}
+
+.itn aside{
+	background: rgb(236, 236, 236);
+	float: left;
+	position: absolute;
+	width: 16em;
+	top: 5em;
+	left: 0;
+	bottom: 5em;
+}
+.itn section{
+	position: absolute;
+	right: 0;
+	top: 5em;
+	left: 16em;
+	bottom: 5em;
+}
+
+.itn article{
+}
+.itn footer{
+	position: absolute;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	height: 5em;
+}

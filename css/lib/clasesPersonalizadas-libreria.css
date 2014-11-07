@@ -1,0 +1,328 @@
+
+/*CLASES CREADAS PARA CREAR UNA LIBRERIA DE OBJECTOS*/
+
+
+ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+  border: 1px solid;
+}
+
+.we-block.we-form-group{
+  margin: 10px 0;
+}
+.we-form-group .we-tableCell> *{
+  vertical-align: middle;
+}
+.we-table li{
+  padding:5px 10px
+}
+
+.we-list ul{
+  max-height: 100px;
+  overflow-y: scroll;
+}
+
+a label,
+.we-icon label,
+.we-boton label,
+.we button label
+{
+  cursor:pointer;
+}
+
+div.we-icon{
+  padding: 0.4em 0.8em;
+}
+.we-icon.we-noText{
+  padding: 0.4em;
+}
+.we-icon.we-noText .fa{
+  margin-right: 0;
+}
+
+.we input[type=text],
+.we select
+{
+  padding: 0.3em;
+}
+.we-select{
+  padding: 0.4em 0.7em;
+}
+
+button .fa,
+select + .we-select .fa,
+.we-icon .fa,
+.we-boton .fa
+{
+  font-size: 1em;
+  line-height: 1em;
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  margin-right: 0.5em;
+}
+
+.we-icon .fa::before{
+  /*margin-right:0.5em*/
+}
+
+.we-icon .fa.we-block{
+  font-size: 2.5em;
+  line-height: 1em;
+  margin: 0.2em 0.2em 0 0.2em;
+  width: inherit;
+}
+.we-icon .fa.we-block + label{
+  margin-bottom: 0.2em;
+  display: block;
+  width: 4em;
+}
+
+.we-icon.we-noText .fa.we-block{
+  font-size: 3em;
+}
+
+.we-icon .fa.we-block + label{
+  font-size: 0.7em;
+}
+
+.we-icon .fa.we-block::before{
+  /*margin-right:0*/
+}
+
+.we-select {
+  position:absolute;
+  right: 0;
+}
+
+.we-select i.fa::after {
+  content:'\f0d7';
+  position:absolute;
+  cursor:pointer;
+  pointer-events:none;
+}
+
+.we-ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden; 
+}
+
+.we-widthMax{
+  min-width: 350px;
+}
+
+.we-shadow{
+  /* box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.47); */
+}
+
+.we-input-1digi{
+  width: 30px;
+}
+
+.we-input-2digi{
+  width: 40px;
+}
+.we-input-3digi{
+  width: 47px;
+}
+
+.we button,
+.we-boton{
+  padding: 0.4em 0.8em 0.3em 0.8em;
+}
+
+.we-boton.we-noText,
+.we button.we-noText
+{
+  padding: 0.4em 0.4em 0.3em 0.4em;
+}
+
+
+
+
+.we-section .we-form-group .we-tableCell > label:first-child{
+  width: 70px;
+}
+.we-section .we-form-group .we-tableCell > label:first-child + input[type=text],
+.we-section .we-form-group .we-tableCell > label:first-child + select
+{
+  width: 250px;
+}
+
+.we-block.we-webserie label{}
+.we-block.we-webserie input{}
+
+.we-inline.we-season{
+  width: 40px;
+}
+.we-inline.we-season label{}
+.we-inline.we-season input{}
+.we-inline.we-chapter{
+  width: 47px;
+}
+.we-inline.we-chapter label{}
+.we-inline.we-chapter input{}
+.we-inline.we-part{
+  width: 30px;
+}
+.we-inline.we-part input{}
+.we-inline.we-part label{}
+.we-inline.we-title{
+  width: 160px;
+}
+.we-inline.we-title input{
+  width: 100%;
+}
+
+.we-section-title{
+  padding: 5px 10px;
+}
+
+.we-section-content{
+  padding: 5px 10px;
+}
+.we ul.ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content{
+  padding: 0;
+  width: 200px;
+}
+
+.we .ui-autocomplete.ui-front.ui-menu.ui-widget.ui-widget-content li{
+  list-style-type: none;
+  text-overflow: ellipsis;
+  white-space: nowrap; 
+  overflow: hidden; 
+  padding: 4px 10px;
+}
+
+.we-icon{
+  text-align: center;
+  /*font-weight: 100;*/
+  /*border-radius: 1em;*/
+}
+
+
+
+.we-buscar{
+  padding: 0.3em;
+}
+
+.we-buscar label .fa::before{
+  content: "\f002";
+}
+
+.we-buscar button{
+  color: inherit; 
+  background: inherit; 
+  box-shadow: none;
+  padding: 0;
+  border:none;
+}
+.we-buscar button .fa{
+  padding: 0;
+  margin: 0;
+}
+.we-buscar button .fa::before{
+  content: "×";
+}
+
+.we-buscar input{
+  padding: 0 !important;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  border: none;
+}
+
+
+
+
+.we-modalWindow {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.we-modalWindow .we-content{
+  padding-top: 100px;
+}
+
+.we-callout{
+  text-align: center;
+  position: absolute;
+  /* width: 300px; */
+  z-index: 102;
+  cursor: default;
+  border-collapse: separate;
+}
+.we-callout .we-content{
+  display: block;
+  padding: 10px;
+  text-align: left;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.we-beakUp,
+.we-beakLeft,
+.we-beakRight,
+.we-beakDown
+{
+  width: 1em;
+  height: 1em;
+  margin-left: -0.5em;
+  transform: rotate(45deg);
+  position: absolute;
+  z-index: -10;
+}
+
+.we-beakUp{
+  top:-6px;
+}
+.we-beakLeft{
+  left:-6px;
+}
+.we-beakRight{
+  right:-6px;
+}
+.we-beakDown{
+  bottom: -0.5em;
+}
+
+.we-state .we-title,
+.we-state .we-content
+{
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.we-state .we-title{
+  margin-top: 5px;
+}
+
+  .we-state .we-title i.fa{
+    margin-right: 10px;
+  }
+
+  .we-state .we-title label{
+    font-weight: 600;
+  }
+
+.we-state .we-content{
+  margin-bottom: 5px;
+}
+
+.we-state.we-highlight .we-title i.fa::before{
+  content: "\f0a4";
+}
+.we-state.we-error .we-title i.fa::before{
+  content: "\f00d";
+}
+.we-state.we-warning .we-title i.fa::before{
+  content: "\f071";
+}
+
+.we .ui-state-focus{
+  cursor: pointer;
+}
