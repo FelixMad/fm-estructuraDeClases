@@ -1,0 +1,36 @@
+<html>
+	<head></head>
+	<body>
+		<script>
+			var usuario = function(nombre,mail){
+				this.nombre = nombre;
+				this.email = mail;
+				this.puntos =[];
+			}
+
+			usuario.prototype = {
+				constructor: usuario,
+				salvarPuntos: function(puntos){
+					this.puntos.push(puntos);
+				},
+				mostrarNombrePuntos:function(){
+					var todosPuntos = this.puntos.length > 0 ? this.puntos.join(',') : 'No hay puntos aun';
+					return this.name + todosPuntos;
+				},
+				cambiarEmail:function(newEmail){
+					this.email = newEmail;
+				}
+			}
+
+			/*usuario.prototype.constructor = usuario;
+			usuario.prototype.salvarPuntos = function(puntos){
+				this.puntos.push(puntos);
+			}*/
+
+			var usuario1 = new usuario ("Alvaro","alvaro@ejemplo.com");
+			usuario1.salvarPuntos(10);
+			usuario1.mostrarNombrePuntos(10);
+			usuario1.cambiarEmail("alvaro2@ejemplo.com");
+		</script>
+	</body>
+</html>
